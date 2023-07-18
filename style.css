@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
 }
 
 .title{
@@ -9,10 +10,40 @@
     font-weight: 700;
 }
 
+.Gtitle{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
 .pera{
+    color: #534C64;
     font-size: 1rem;
     font-weight: 400;
     line-height: 30px;
+}
+
+.pbtn{
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    padding: 21px 40px;
+    border: 0px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bbtn{
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 21px 40px;
+    border: 0px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* nav styles */
@@ -21,7 +52,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 240px;
+    padding: 20px 240px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -33,7 +64,7 @@ nav{
 }
 
 .logo > h1 > span{
-    color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: #FF42A5;
 }
 
 .menu{
@@ -66,6 +97,108 @@ ul > li > a{
     font-weight: 500;
 }
 
+/* banner styles */
+
+.banner{
+    display: flex;
+    padding: 0px 240px;
+    justify-content: space-between;
+    background-image: url('./images/Group\ 14.png');
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+#goat{
+    font-size: 5.9rem;
+}
+
+.btext{
+    align-items: center;
+    justify-content: center;
+}
+
+.btext > button{
+    margin-top: 20px;
+    margin-right: 16px;
+    
+}
+
+/* online style */
+
+.online{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 240px;
+    justify-content: center;
+    align-items: center;
+}
+
+.otext{
+    text-align: center;
+}
+.games{
+    display: flex;
+    gap: 24px;
+    margin-top: 45px;
+}
+
+.ocard:hover  img{
+    filter: brightness(0.5);
+    opacity: 0.8;
+}
+
+.ocard:hover  .play{
+    opacity: 1; 
+    filter: brightness(1.5);    
+}
+
+.ocard{
+    position: relative;
+}
+
+.play > p{
+    font-weight: 600;
+    color: rgb(252, 94, 94);
+}
+
+.play{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* PlayGames styles */
+
+.playgames{
+    display: flex;
+    text-align: right;
+    align-items:center ;
+    padding: 120px 240px;
+    gap: 120px;
+    justify-content: center;
+}
+
+.ptext{
+    max-width: 340px;
+    line-height: 60px;
+    padding-right: 120px;
+}
+
+.pimg{
+    position: relative;
+}
+
+.img1{
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+}
+
 /* Mobile View */
 
 @media screen and (max-width: 576px) {
@@ -74,12 +207,98 @@ ul > li > a{
 
     nav{
         flex-direction: column;
-        padding: 0;
         text-align: center;
-        padding-bottom: 20px;
+        padding: 20px 0px;
     }
 
     .menu, ul{
         flex-direction: column;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 50px 0px;
+        background-size: cover;
+    }
+
+    .btext{
+        padding: 100px 0px;
+    }
+
+    .banner> img{
+        width: 100%;
+    }
+
+    .online{
+        padding: 120px 0px;
+    }
+
+    .games{
+        flex-direction: column;
+    }
+
+    .ocard{
+        text-align: center;
+    }
+
+    .playgames{
+        padding: 120px 0px;
+        flex-direction: column;
+    }
+
+    .ptext{
+        text-align: center;
+        padding: 0;
+    }
+
+    .pimg{
+        text-align: center;
+    }
+
+    .img1{
+        width: 40%;
+        left: 0px;
+    }
+
+    .img2{
+        width: 70%;
+    }
+}
+
+/* Tablet View */
+
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 20px 0px;
+    }
+
+    /* banner */
+
+    .banner{
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 0px;
+        background-size: cover;
+    }
+
+    .btext{
+        padding: 100px 0px;
+    }
+
+    .banner> img{
+        width: 100%;
+    }
+
+    .online{
+        padding: 120px 0px;
+    }
+
+    .games{
+        flex-direction: column;
+    }
+
+    .ocard{
+        text-align: center;
     }
 }
