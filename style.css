@@ -128,7 +128,7 @@ ul > li > a{
 .online{
     display: flex;
     flex-direction: column;
-    padding: 120px 240px;
+    padding: 60px 240px;
     justify-content: center;
     align-items: center;
 }
@@ -190,7 +190,7 @@ ul > li > a{
     display: flex;
     text-align: right;
     align-items:center ;
-    padding: 120px 240px;
+    padding: 60px 240px;
     gap: 120px;
     justify-content: center;
 }
@@ -216,7 +216,7 @@ ul > li > a{
 .category{
     display: flex;
     gap: 27px;
-    padding: 100px 240px;
+    padding: 60px 240px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -242,7 +242,7 @@ ul > li > a{
 
 footer{
     background: #0B0223;
-    padding: 100px 0px;
+    padding: 60px 0px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -310,7 +310,10 @@ footer{
     .menu, ul{
         flex-direction: column;
         padding-top: 20px;
+        padding-left: 0;
     }
+
+    /* Banner */
 
     .banner{
         flex-direction: column-reverse;
@@ -328,11 +331,13 @@ footer{
     }
 
     .banner> img{
-        width: 100%;
+        width: 85%;
     }
 
+    /* Online */
+
     .online{
-        padding: 120px 0px;
+        padding: 60px 0px;
     }
 
     .games{
@@ -343,8 +348,10 @@ footer{
         text-align: center;
     }
 
+    /* PlayGames */
+
     .playgames{
-        padding: 120px 0px;
+        padding: 50px 0px;
         flex-direction: column;
     }
 
@@ -358,51 +365,55 @@ footer{
     }
 
     .img1{
-        width: 40%;
-        left: 0px;
+        width: 25%;
+        left: 10%;
+        bottom: -10%;
     }
 
     .img2{
-        width: 70%;
+        width: 55%;
+
     }
+
+    /* Category */
 
     .category{
         padding: 50px 10px;
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(3 ,auto);
+        
+    }
+    .ccard>img{
+        width: 40%;
+
+    }
+
+    .ccard> p{
+        font-size: 0.7rem;
     }
 
     .ccard{
-        padding: 10px 15px;
+        gap: 5px;
+        padding: 4px 5px;
     }
+
+    /* Footer */
 
     .flink1{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        text-align: center;
-        padding: 10px;
+        grid-template-columns: repeat(3,auto);
     }
 
     .ficon{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        align-items: center;
-        align-content: center;
-        justify-content: center;
+        grid-template-columns: repeat(3,auto);
+        gap: 50px;
 
-    }
-
-    .ficon > img{
-        text-align: center;
-        align-items: center;
-        padding-left: 40px;
     }
 
     .flink2{
-        display: grid;
-        text-align: center;
-        align-items: center;
-        grid-template-columns: repeat(2,1fr);
+        display: grid; 
+        grid-template-columns: repeat(2,auto);
     }
 }
 
@@ -427,15 +438,15 @@ footer{
     }
 
     .btext{
-        padding: 100px 0px;
+        padding: 60px 0px;
     }
 
     .banner> img{
-        width: 100%;
+        width: 75%;
     }
 
     .online{
-        padding: 120px 0px;
+        padding: 60px 0px;
     }
 
     .games{
@@ -447,7 +458,7 @@ footer{
     }
 
     .playgames{
-        padding: 120px 0px;
+        padding: 60px 0px;
         flex-direction: column;
     }
 
@@ -470,9 +481,9 @@ footer{
     }
 
     .category{
-        padding: 50px 50px;
+        padding: 60px 50px;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,auto);
     }
 
     .ccard{
@@ -481,8 +492,7 @@ footer{
 
     .flink1{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        text-align: center;
+        grid-template-columns: repeat(3,auto);
         padding: 10px;
     }
 
