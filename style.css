@@ -315,12 +315,16 @@ footer{
     .banner{
         flex-direction: column-reverse;
         gap: 20px;
-        padding: 50px 0px;
-        background-size: cover;
+        padding:0px;
+        margin: 50px 0px;
+        background-size: 100% ;
+        background-position: bottom;
+        background-position-y: 510px;
     }
 
     .btext{
-        padding: 100px 0px;
+        padding: 0;
+        margin: 100px 0px;
     }
 
     .banner> img{
@@ -415,7 +419,7 @@ footer{
         flex-direction: column;
         gap: 20px;
         padding: 50px 0px;
-        background-size: cover;
+        background-size: 100%;
     }
 
     .btext{
