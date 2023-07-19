@@ -410,7 +410,11 @@ footer{
 
 @media screen and (max-width: 768px) and (min-width: 576px) {
     nav{
-        padding: 20px 0px;
+        padding: 20px 10px;
+    }
+
+    .search{
+        padding: 10px 15px;
     }
 
     /* banner */
