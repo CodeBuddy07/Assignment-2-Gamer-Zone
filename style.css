@@ -149,7 +149,7 @@ ul > li > a{
 
 .ocard:hover  .play{
     opacity: 1; 
-    filter: brightness(1.5);    
+    filter: brightness(3.6);    
 }
 
 .ocard{
